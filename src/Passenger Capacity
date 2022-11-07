@@ -1,0 +1,25 @@
+package homework_enum.racing.transport;
+
+public enum PassengerCapacity {
+
+XS (сapacityFrom: 0, capacityTo: 10),
+S (сapacityFrom: 0, capacityTo: 25),
+M (сapacityFrom: 40, capacityTo: 50),
+L (сapacityFrom: 60, capacityTo: 80),
+XL (сapacityFrom: 100, capacityTo: 120);
+
+private final int capacityFrom;
+private final int capacityTo;
+
+Passenger Capacity (int capacityFrom, int capacityTo) {
+
+this.capacityFrom = capacityFrom;
+this.capacityTo = capacityTo;
+}
+
+public String to String(){
+String capacity = capacityFrom>0 ? capacityFrom + "-" + capacityTo: String.valievOf(capacityTo);
+return "Вместимость: " + name() + "(" + capacity + "мест");
+
+}
+}

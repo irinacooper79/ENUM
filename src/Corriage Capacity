@@ -1,0 +1,25 @@
+package homework_enum.racing.transport;
+
+public enum CarriageCapacity {
+
+№1 (сapacityFrom: null, capacityTo: 3.5f),
+№2 (сapacityFrom: 3.5f, capacityTo: 12f),
+№3 (сapacityFrom: 12f, capacityTo: null);
+
+private final Float capacityFrom;
+private final Float capacityTo;
+
+CarriageCapacity (Float capacityFrom, Float capacityTo) {
+
+this.capacityFrom = capacityFrom;
+this.capacityTo = capacityTo;
+}
+
+public String toString() {
+
+String capacityFromString = capacityFrom !=null ? "от" + capacityFrom: "";
+String capacityToString = capacityTo != null ? "до" + capacityTo + "тонн": "";
+
+return "грузоподьемность" + capacityFromString + " " + capacityToString;
+}
+}
